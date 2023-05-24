@@ -8,10 +8,22 @@
         <!-- Extras -->
   <remove-project name="platform/frameworks/opt/net/ims"/>
   <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims.git" remote="me" revision="twelve-L" clone-depth="1"/> 
+  <remove-project name="LineageOS/android_frameworks_opt_telephony"/> 
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony.git" remote="me" revision="twelve-L" clone-depth="1"/>
+  <remove-project name="LineageOS/android_external_chromium-webview_prebuilt_arm"/>
+  <project path="external/chromium-webview/prebuilt/arm" name="webview-arm.git" remote="me" revision="main" clone-depth="1"/> 
+  <remove-project name="LineageOS/android_external_chromium-webview_prebuilt_arm64"/> 
+  <project path="external/chromium-webview/prebuilt/arm64" name="webview-arm64.git" remote="me" revision="main" clone-depth="1"/>    
+  <remove-project name="LineageOS/android_external_chromium-webview_prebuilt_x86"/> 
+  <project path="external/chromium-webview/prebuilt/x86" name="webview-arm86.git" remote="me" revision="main" clone-depth="1"/>
+  <remove-project name="LineageOS/android_external_chromium-webview_prebuilt_x86_64"/> 
+  <project path="external/chromium-webview/prebuilt/x86_64" name="webview-arm86x64" remote="me" revision="main" clone-depth="1"/>               
+   
+   
   
   <!-- Device Trees -->
-  <project path="device/xiaomi/certus" name="device_certus.git" remote="me" revision="fluid-12.1" clone-depth="1" />
-  <project path="kernel/xiaomi/mt6765" name="kernel_certus.git" remote="me" revision="10-alps" clone-depth="1" />
+  <project path="device/xiaomi/certus" name="android_device_xiaomi_certus.git" remote="me" revision="fluid-12.1" clone-depth="1" />
+  <project path="kernel/xiaomi/mt6765" name="kernel_xiaomi_mt6765.git" remote="me" revision="10-alps" clone-depth="1" />
   <project path="vendor/xiaomi/certus" name="vendor_xiaomi.git" remote="me" revision="12" clone-depth="1" />
   <project path="vendor/mediatek-ims" name="vendor_ims.git" remote="me" revision="12" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-gnueabihf-7.5" name="linaro_arm.git" remote="me" revision="master" clone-depth="1" />
